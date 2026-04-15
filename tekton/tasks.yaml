@@ -64,9 +64,9 @@ spec:
       type: string
       default: "-v"
     - name: database_uri
-	    description: Database connection string
-	    type: string
-	    default: "sqlite:///test.db"
+      description: Database connection string
+      type: string
+      default: "sqlite:///test.db"
   steps:
     - name: nosetests
       image: python:3.9-slim
@@ -84,4 +84,3 @@ spec:
 
         echo "***** Running nosetests with: $(params.args)"
         nosetests $(params.args)
-
